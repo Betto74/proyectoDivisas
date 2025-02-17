@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
 
         // Programa el Worker para que se ejecute cada 10 segundos (para pruebas)
         val workRequest = PeriodicWorkRequestBuilder<ExchangeRateWorker>(
-            10, TimeUnit.SECONDS // Intervalo de ejecución: 10 segundos
+            1, TimeUnit.HOURS // Intervalo de ejecución: 10 segundos
         ).build()
 
         WorkManager.getInstance(this).enqueue(workRequest)
