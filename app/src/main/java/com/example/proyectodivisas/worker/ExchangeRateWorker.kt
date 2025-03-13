@@ -29,7 +29,7 @@ class ExchangeRateWorker(appContext: Context, workerParams: WorkerParameters) :
                     .build()
 
                 val service = retrofit.create(ExchangeRateService::class.java)
-                val response = service.getLatestRates("USD")
+                val response = service.getLatestRates("MXN")
 
                 if (response.isSuccessful) {
                     val exchangeRate = response.body()

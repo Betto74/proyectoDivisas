@@ -81,4 +81,8 @@ dependencies {
 
     // Corrutinas
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation ("io.github.vanpra.compose-material-dialogs:datetime:0.9.0")
+    implementation("androidx.compose.material3:material3:1.1.1")
+
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }
