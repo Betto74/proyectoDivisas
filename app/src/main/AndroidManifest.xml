@@ -29,6 +29,9 @@
             android:name=".data.DivisasContentProvider"
             android:authorities="${applicationId}.provider"
             android:exported="true" />
+            <!--
+            Obliga a cualquier aplicación que quiera interactuar con tu ContentProvider a tener este permiso declarado
+            android:permission="com.example.proyectodivisas.permission.ACCESS_DIVISAS_PROVIDER" /> -->
     </application>
 
 
